@@ -15,27 +15,35 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TaskTest {
 
-    public WebDriver acessaAplicacao() throws MalformedURLException {
-        ChromeOptions chromeOptions = new ChromeOptions();
+    WebDriver driver = new ChromeDriver();
+
+    @Before
+    @Test
+    public void acessaAplicacao() {
+        driver.get("http://localhost:8080/tasks/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        // ChromeOptions chromeOptions = new ChromeOptions();
+        // chromeOptions.setCapability("browserVersion", "79");
+
         // chromeOptions.setCapability("browserVersion", "79.0.3945.36");
         // chromeOptions.setCapability("platformName", "Mac OS X");
-        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
-        driver.get("http://localhost:8080/tasks");
+        // WebDriver driver = new RemoteWebDriver(new
+        // URL("http://192.168.1.235:4444/wd/hub"), chromeOptions);
+
         // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        return driver;
+        // return driver;
     }
 
     @After
     @Test
     public void quitBrowser() throws MalformedURLException {
-        WebDriver driver = acessaAplicacao();
+        // WebDriver driver = acessaAplicacao();
         driver.quit();
     }
 
     @Test
     public void criarTarefaComSucesso() throws MalformedURLException {
-        WebDriver driver = acessaAplicacao();
-
+        // WebDriver driver = acessaAplicacao();
         driver.findElement(By.id("addTodo")).click();
         driver.findElement(By.id("task")).sendKeys("Tarefa Teste via Selenium");
         driver.findElement(By.id("dueDate")).sendKeys("10/10/2022");
@@ -46,8 +54,7 @@ public class TaskTest {
 
     @Test
     public void criarTarefaSemDescricao() throws MalformedURLException {
-        WebDriver driver = acessaAplicacao();
-
+        // WebDriver driver = acessaAplicacao();
         driver.findElement(By.id("addTodo")).click();
         driver.findElement(By.id("dueDate")).sendKeys("10/10/2022");
         driver.findElement(By.id("saveButton")).click();
@@ -57,8 +64,7 @@ public class TaskTest {
 
     @Test
     public void criarTarefaSemData() throws MalformedURLException {
-        WebDriver driver = acessaAplicacao();
-
+        // WebDriver driver = acessaAplicacao();
         driver.findElement(By.id("addTodo")).click();
         driver.findElement(By.id("task")).sendKeys("Tarefa Teste via Selenium");
         driver.findElement(By.id("saveButton")).click();
@@ -68,8 +74,7 @@ public class TaskTest {
 
     @Test
     public void criarTarefaComDataPassada() throws MalformedURLException {
-        WebDriver driver = acessaAplicacao();
-
+        // WebDriver driver = acessaAplicacao();
         driver.findElement(By.id("addTodo")).click();
         driver.findElement(By.id("task")).sendKeys("Tarefa Teste via Selenium");
         driver.findElement(By.id("dueDate")).sendKeys("10/10/2020");

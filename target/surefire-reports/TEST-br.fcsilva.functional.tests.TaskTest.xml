@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.fcsilva.functional.tests.TaskTest" time="67.495" tests="10" errors="10" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.fcsilva.functional.tests.TaskTest" time="21.691" tests="10" errors="10" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -60,105 +60,71 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="criarTarefaComSucesso" classname="br.fcsilva.functional.tests.TaskTest" time="23.088">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+  <testcase name="quitBrowser" classname="br.fcsilva.functional.tests.TaskTest" time="14.524">
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;e1f9462b518e&apos;, ip: &apos;172.20.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
   (chrome not reachable)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'df2ee0e9ac80', ip: '172.20.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
-Driver info: driver.version: unknown
-remote stacktrace: #0 0x0040004b6479 <unknown>
-
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.criarTarefaComSucesso(TaskTest.java:38)
-]]></error>
-  </testcase>
-  <testcase name="criarTarefaComSucesso" classname="br.fcsilva.functional.tests.TaskTest" time="0">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
-  (chrome not reachable)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'df2ee0e9ac80', ip: '172.20.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
-Driver info: driver.version: unknown
-remote stacktrace: #0 0x0040004b6479 <unknown>
-
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:32)
-]]></error>
-  </testcase>
-  <testcase name="criarTarefaComDataPassada" classname="br.fcsilva.functional.tests.TaskTest" time="31.295">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
-  (chrome not reachable)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'df2ee0e9ac80', ip: '172.20.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
-Driver info: driver.version: unknown
-remote stacktrace: #0 0x0040004b6479 <unknown>
-
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.criarTarefaComDataPassada(TaskTest.java:72)
-]]></error>
-  </testcase>
-  <testcase name="criarTarefaComDataPassada" classname="br.fcsilva.functional.tests.TaskTest" time="0">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
-  (chrome not reachable)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'df2ee0e9ac80', ip: '172.20.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
-Driver info: driver.version: unknown
-remote stacktrace: #0 0x0040004b6479 <unknown>
-
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:32)
-]]></error>
-  </testcase>
-  <testcase name="quitBrowser" classname="br.fcsilva.functional.tests.TaskTest" time="67.494">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: unable to discover open pages&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;e1f9462b518e&apos;, ip: &apos;172.20.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: unknown error: unable to discover open pages
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'e1f9462b518e', ip: '172.20.0.3', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
 Driver info: driver.version: unknown
 remote stacktrace: #0 0x0040004b6479 <unknown>
 
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:32)
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:34)
 ]]></error>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+    <system-err><![CDATA[set. 01, 2022 12:38:58 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFORMAÇÕES: Using OpenTelemetry for tracing
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
   <testcase name="quitBrowser" classname="br.fcsilva.functional.tests.TaskTest" time="0">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;e1f9462b518e&apos;, ip: &apos;172.20.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'df2ee0e9ac80', ip: '172.20.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x0040004b6479 <unknown>
+
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:34)
+]]></error>
+  </testcase>
+  <testcase name="criarTarefaSemData" classname="br.fcsilva.functional.tests.TaskTest" time="20.79">
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'df2ee0e9ac80', ip: '172.20.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x0040004b6479 <unknown>
+
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.criarTarefaSemData(TaskTest.java:61)
+]]></error>
+  </testcase>
+  <testcase name="criarTarefaSemData" classname="br.fcsilva.functional.tests.TaskTest" time="0">
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;e1f9462b518e&apos;, ip: &apos;172.20.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
   (chrome not reachable)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
@@ -168,16 +134,16 @@ Driver info: driver.version: unknown
 remote stacktrace: #0 0x0040004b6479 <unknown>
 
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:32)
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:34)
 ]]></error>
   </testcase>
-  <testcase name="criarTarefaSemData" classname="br.fcsilva.functional.tests.TaskTest" time="27.28">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+  <testcase name="criarTarefaSemDescricao" classname="br.fcsilva.functional.tests.TaskTest" time="17.378">
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
   (chrome not reachable)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
@@ -187,57 +153,54 @@ Driver info: driver.version: unknown
 remote stacktrace: #0 0x0040004b6479 <unknown>
 
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.criarTarefaSemData(TaskTest.java:61)
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.criarTarefaSemDescricao(TaskTest.java:51)
 ]]></error>
-  </testcase>
-  <testcase name="criarTarefaSemData" classname="br.fcsilva.functional.tests.TaskTest" time="0">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
-  (chrome not reachable)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'df2ee0e9ac80', ip: '172.20.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
-Driver info: driver.version: unknown
-remote stacktrace: #0 0x0040004b6479 <unknown>
-
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:32)
-]]></error>
-  </testcase>
-  <testcase name="criarTarefaSemDescricao" classname="br.fcsilva.functional.tests.TaskTest" time="35.261">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
-Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
-  (chrome not reachable)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'df2ee0e9ac80', ip: '172.20.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
-Driver info: driver.version: unknown
-remote stacktrace: #0 0x0040004b6479 <unknown>
-
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.criarTarefaSemDescricao(TaskTest.java:50)
-]]></error>
-    <system-err><![CDATA[set. 01, 2022 1:17:49 AM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
-INFORMAÇÕES: Using OpenTelemetry for tracing
-]]></system-err>
   </testcase>
   <testcase name="criarTarefaSemDescricao" classname="br.fcsilva.functional.tests.TaskTest" time="0">
-    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:9921:2257:5e2b:14d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;e1f9462b518e&apos;, ip: &apos;172.20.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'e1f9462b518e', ip: '172.20.0.3', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x0040004b6479 <unknown>
+
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:34)
+]]></error>
+  </testcase>
+  <testcase name="criarTarefaComSucesso" classname="br.fcsilva.functional.tests.TaskTest" time="21.69">
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;e1f9462b518e&apos;, ip: &apos;172.20.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'e1f9462b518e', ip: '172.20.0.3', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x0040004b6479 <unknown>
+
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.criarTarefaComSucesso(TaskTest.java:40)
+]]></error>
+  </testcase>
+  <testcase name="criarTarefaComSucesso" classname="br.fcsilva.functional.tests.TaskTest" time="0">
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
   (chrome not reachable)
   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
@@ -247,12 +210,50 @@ Driver info: driver.version: unknown
 remote stacktrace: #0 0x0040004b6479 <unknown>
 
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:9921:2257:5e2b:14d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
 Capabilities {}
-	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:23)
-	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:32)
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:34)
+]]></error>
+  </testcase>
+  <testcase name="criarTarefaComDataPassada" classname="br.fcsilva.functional.tests.TaskTest" time="18.043">
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;e1f9462b518e&apos;, ip: &apos;172.20.0.3&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'e1f9462b518e', ip: '172.20.0.3', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x0040004b6479 <unknown>
+
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.criarTarefaComDataPassada(TaskTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="criarTarefaComDataPassada" classname="br.fcsilva.functional.tests.TaskTest" time="0">
+    <error message="Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed&#10;  (chrome not reachable)&#10;  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;&#10;System info: host: &apos;df2ee0e9ac80&apos;, ip: &apos;172.20.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.10.104-linuxkit&apos;, java.version: &apos;1.8.0_232&apos;&#10;Driver info: driver.version: unknown&#10;remote stacktrace: #0 0x0040004b6479 &lt;unknown&gt;&#10;&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;AirdeFrancilene.lan&apos;, ip: &apos;2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]&#10;Capabilities {}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: crashed
+  (chrome not reachable)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'df2ee0e9ac80', ip: '172.20.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.104-linuxkit', java.version: '1.8.0_232'
+Driver info: driver.version: unknown
+remote stacktrace: #0 0x0040004b6479 <unknown>
+
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'AirdeFrancilene.lan', ip: '2001:818:d971:7b00:38ff:e4ad:f7fe:4ace%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+Capabilities {}
+	at br.fcsilva.functional.tests.TaskTest.acessaAplicacao(TaskTest.java:24)
+	at br.fcsilva.functional.tests.TaskTest.quitBrowser(TaskTest.java:34)
 ]]></error>
   </testcase>
 </testsuite>
